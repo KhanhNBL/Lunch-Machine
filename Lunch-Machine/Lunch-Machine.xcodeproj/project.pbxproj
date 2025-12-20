@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8BABA8142EF5052F0069A044 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F82EF502630069A044 /* LocationManager.swift */; };
+		8BABA8152EF5052F0069A044 /* FrontHeaderCTA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8052EF502630069A044 /* FrontHeaderCTA.swift */; };
+		8BABA8162EF5052F0069A044 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8042EF502630069A044 /* EmptyStateView.swift */; };
+		8BABA8172EF5052F0069A044 /* RestaurantsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8062EF502630069A044 /* RestaurantsListView.swift */; };
+		8BABA8182EF5052F0069A044 /* LunchMachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA80B2EF502630069A044 /* LunchMachineApp.swift */; };
+		8BABA8192EF5052F0069A044 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F12EF502630069A044 /* ApiClient.swift */; };
+		8BABA81A2EF5052F0069A044 /* WoltVenue+StableID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7FC2EF502630069A044 /* WoltVenue+StableID.swift */; };
+		8BABA81B2EF5052F0069A044 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F62EF502630069A044 /* Logger.swift */; };
+		8BABA81C2EF5052F0069A044 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F32EF502630069A044 /* EndpointProvider.swift */; };
+		8BABA81D2EF5052F0069A044 /* WoltResults+Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7FD2EF502630069A044 /* WoltResults+Venue.swift */; };
+		8BABA81E2EF5052F0069A044 /* RestaurantsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7ED2EF502630069A044 /* RestaurantsRepository.swift */; };
+		8BABA81F2EF5052F0069A044 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8012EF502630069A044 /* Landmark.swift */; };
+		8BABA8202EF5052F0069A044 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8002EF502630069A044 /* Restaurant.swift */; };
+		8BABA8212EF5052F0069A044 /* WoltEndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7EF2EF502630069A044 /* WoltEndpointProvider.swift */; };
+		8BABA8222EF5052F0069A044 /* GeocodeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F92EF502630069A044 /* GeocodeManager.swift */; };
+		8BABA8232EF5052F0069A044 /* WoltVenueRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8032EF502630069A044 /* WoltVenueRowView.swift */; };
+		8BABA8252EF5052F0069A044 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7F22EF502630069A044 /* ApiError.swift */; };
+		8BABA8262EF5052F0069A044 /* WoltResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA7FE2EF502630069A044 /* WoltResults.swift */; };
+		8BABA8272EF5052F0069A044 /* RestaurantRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8072EF502630069A044 /* RestaurantRowView.swift */; };
+		8BABA8382EF507540069A044 /* LunchMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BABA8122EF502630069A044 /* LunchMachineTests.swift */; };
+		8BABA83A2EF51BC90069A044 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BABA80E2EF502630069A044 /* Preview Assets.xcassets */; };
+		8BABA83D2EF580790069A044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BABA80C2EF502630069A044 /* Assets.xcassets */; };
+		8BABA83E2EF623ED0069A044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BABA8102EF502630069A044 /* LaunchScreen.storyboard */; };
+		8BABA83F2EF6CC5E0069A044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BABA80C2EF502630069A044 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8BABA8332EF5073C0069A044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BABA7D72EF502430069A044 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8BABA7DE2EF502430069A044;
+			remoteInfo = "Lunch-Machine";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8BABA7DF2EF502430069A044 /* Lunch-Machine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lunch-Machine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BABA7ED2EF502630069A044 /* RestaurantsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsRepository.swift; sourceTree = "<group>"; };
+		8BABA7EF2EF502630069A044 /* WoltEndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltEndpointProvider.swift; sourceTree = "<group>"; };
+		8BABA7F12EF502630069A044 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		8BABA7F22EF502630069A044 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		8BABA7F32EF502630069A044 /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
+		8BABA7F62EF502630069A044 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		8BABA7F82EF502630069A044 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8BABA7F92EF502630069A044 /* GeocodeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodeManager.swift; sourceTree = "<group>"; };
+		8BABA7FC2EF502630069A044 /* WoltVenue+StableID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WoltVenue+StableID.swift"; sourceTree = "<group>"; };
+		8BABA7FD2EF502630069A044 /* WoltResults+Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WoltResults+Venue.swift"; sourceTree = "<group>"; };
+		8BABA7FE2EF502630069A044 /* WoltResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltResults.swift; sourceTree = "<group>"; };
+		8BABA8002EF502630069A044 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		8BABA8012EF502630069A044 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		8BABA8032EF502630069A044 /* WoltVenueRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoltVenueRowView.swift; sourceTree = "<group>"; };
+		8BABA8042EF502630069A044 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		8BABA8052EF502630069A044 /* FrontHeaderCTA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontHeaderCTA.swift; sourceTree = "<group>"; };
+		8BABA8062EF502630069A044 /* RestaurantsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListView.swift; sourceTree = "<group>"; };
+		8BABA8072EF502630069A044 /* RestaurantRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantRowView.swift; sourceTree = "<group>"; };
+		8BABA80A2EF502630069A044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BABA80B2EF502630069A044 /* LunchMachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchMachineApp.swift; sourceTree = "<group>"; };
+		8BABA80C2EF502630069A044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8BABA80D2EF502630069A044 /* lunch_machine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lunch_machine.entitlements; sourceTree = "<group>"; };
+		8BABA80E2EF502630069A044 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8BABA8102EF502630069A044 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8BABA8122EF502630069A044 /* LunchMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchMachineTests.swift; sourceTree = "<group>"; };
+		8BABA82F2EF5073C0069A044 /* Lunch-MachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lunch-MachineTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8BABA7DC2EF502430069A044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BABA82C2EF5073C0069A044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8BABA7D62EF502430069A044 = {
+			isa = PBXGroup;
+			children = (
+				8BABA8112EF502630069A044 /* lunch-machine */,
+				8BABA8132EF502630069A044 /* LunchMachineTests */,
+				8BABA7E02EF502430069A044 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+		};
+		8BABA7E02EF502430069A044 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7DF2EF502430069A044 /* Lunch-Machine.app */,
+				8BABA82F2EF5073C0069A044 /* Lunch-MachineTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8BABA7EE2EF502630069A044 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7ED2EF502630069A044 /* RestaurantsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8BABA7F02EF502630069A044 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7EF2EF502630069A044 /* WoltEndpointProvider.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		8BABA7F42EF502630069A044 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7F12EF502630069A044 /* ApiClient.swift */,
+				8BABA7F22EF502630069A044 /* ApiError.swift */,
+				8BABA7F32EF502630069A044 /* EndpointProvider.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8BABA7F52EF502630069A044 /* Networks */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7F02EF502630069A044 /* Endpoints */,
+				8BABA7F42EF502630069A044 /* Common */,
+			);
+			path = Networks;
+			sourceTree = "<group>";
+		};
+		8BABA7F72EF502630069A044 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7F62EF502630069A044 /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		8BABA7FA2EF502630069A044 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7F82EF502630069A044 /* LocationManager.swift */,
+				8BABA7F92EF502630069A044 /* GeocodeManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		8BABA7FB2EF502630069A044 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7F72EF502630069A044 /* Logger */,
+				8BABA7FA2EF502630069A044 /* LocationManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8BABA7FF2EF502630069A044 /* Wolt */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7FC2EF502630069A044 /* WoltVenue+StableID.swift */,
+				8BABA7FD2EF502630069A044 /* WoltResults+Venue.swift */,
+				8BABA7FE2EF502630069A044 /* WoltResults.swift */,
+			);
+			path = Wolt;
+			sourceTree = "<group>";
+		};
+		8BABA8022EF502630069A044 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7FF2EF502630069A044 /* Wolt */,
+				8BABA8002EF502630069A044 /* Restaurant.swift */,
+				8BABA8012EF502630069A044 /* Landmark.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8BABA8082EF502630069A044 /* RestaurantsListView */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA8032EF502630069A044 /* WoltVenueRowView.swift */,
+				8BABA8042EF502630069A044 /* EmptyStateView.swift */,
+				8BABA8052EF502630069A044 /* FrontHeaderCTA.swift */,
+				8BABA8062EF502630069A044 /* RestaurantsListView.swift */,
+				8BABA8072EF502630069A044 /* RestaurantRowView.swift */,
+			);
+			path = RestaurantsListView;
+			sourceTree = "<group>";
+		};
+		8BABA8092EF502630069A044 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA8082EF502630069A044 /* RestaurantsListView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8BABA80F2EF502630069A044 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA80E2EF502630069A044 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8BABA8112EF502630069A044 /* lunch-machine */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA7EE2EF502630069A044 /* Repositories */,
+				8BABA7F52EF502630069A044 /* Networks */,
+				8BABA7FB2EF502630069A044 /* Manager */,
+				8BABA8022EF502630069A044 /* Models */,
+				8BABA8092EF502630069A044 /* Scenes */,
+				8BABA80A2EF502630069A044 /* Info.plist */,
+				8BABA80B2EF502630069A044 /* LunchMachineApp.swift */,
+				8BABA80C2EF502630069A044 /* Assets.xcassets */,
+				8BABA80D2EF502630069A044 /* lunch_machine.entitlements */,
+				8BABA80F2EF502630069A044 /* Preview Content */,
+				8BABA8102EF502630069A044 /* LaunchScreen.storyboard */,
+			);
+			path = "lunch-machine";
+			sourceTree = "<group>";
+		};
+		8BABA8132EF502630069A044 /* LunchMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				8BABA8122EF502630069A044 /* LunchMachineTests.swift */,
+			);
+			path = LunchMachineTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8BABA7DE2EF502430069A044 /* Lunch-Machine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BABA7EA2EF502450069A044 /* Build configuration list for PBXNativeTarget "Lunch-Machine" */;
+			buildPhases = (
+				8BABA7DB2EF502430069A044 /* Sources */,
+				8BABA7DC2EF502430069A044 /* Frameworks */,
+				8BABA7DD2EF502430069A044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lunch-Machine";
+			packageProductDependencies = (
+			);
+			productName = "Lunch-Machine";
+			productReference = 8BABA7DF2EF502430069A044 /* Lunch-Machine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8BABA82E2EF5073C0069A044 /* Lunch-MachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BABA8352EF5073C0069A044 /* Build configuration list for PBXNativeTarget "Lunch-MachineTests" */;
+			buildPhases = (
+				8BABA82B2EF5073C0069A044 /* Sources */,
+				8BABA82C2EF5073C0069A044 /* Frameworks */,
+				8BABA82D2EF5073C0069A044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8BABA8342EF5073C0069A044 /* PBXTargetDependency */,
+			);
+			name = "Lunch-MachineTests";
+			packageProductDependencies = (
+			);
+			productName = "Lunch-MachineTests";
+			productReference = 8BABA82F2EF5073C0069A044 /* Lunch-MachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8BABA7D72EF502430069A044 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					8BABA7DE2EF502430069A044 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					8BABA82E2EF5073C0069A044 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 8BABA7DE2EF502430069A044;
+					};
+				};
+			};
+			buildConfigurationList = 8BABA7DA2EF502430069A044 /* Build configuration list for PBXProject "Lunch-Machine" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8BABA7D62EF502430069A044;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8BABA7E02EF502430069A044 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BABA7DE2EF502430069A044 /* Lunch-Machine */,
+				8BABA82E2EF5073C0069A044 /* Lunch-MachineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8BABA7DD2EF502430069A044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BABA83D2EF580790069A044 /* Assets.xcassets in Resources */,
+				8BABA83E2EF623ED0069A044 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BABA82D2EF5073C0069A044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BABA83F2EF6CC5E0069A044 /* Assets.xcassets in Resources */,
+				8BABA83A2EF51BC90069A044 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BABA7DB2EF502430069A044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BABA8142EF5052F0069A044 /* LocationManager.swift in Sources */,
+				8BABA8152EF5052F0069A044 /* FrontHeaderCTA.swift in Sources */,
+				8BABA8162EF5052F0069A044 /* EmptyStateView.swift in Sources */,
+				8BABA8172EF5052F0069A044 /* RestaurantsListView.swift in Sources */,
+				8BABA8182EF5052F0069A044 /* LunchMachineApp.swift in Sources */,
+				8BABA8192EF5052F0069A044 /* ApiClient.swift in Sources */,
+				8BABA81A2EF5052F0069A044 /* WoltVenue+StableID.swift in Sources */,
+				8BABA81B2EF5052F0069A044 /* Logger.swift in Sources */,
+				8BABA81C2EF5052F0069A044 /* EndpointProvider.swift in Sources */,
+				8BABA81D2EF5052F0069A044 /* WoltResults+Venue.swift in Sources */,
+				8BABA81E2EF5052F0069A044 /* RestaurantsRepository.swift in Sources */,
+				8BABA81F2EF5052F0069A044 /* Landmark.swift in Sources */,
+				8BABA8202EF5052F0069A044 /* Restaurant.swift in Sources */,
+				8BABA8212EF5052F0069A044 /* WoltEndpointProvider.swift in Sources */,
+				8BABA8222EF5052F0069A044 /* GeocodeManager.swift in Sources */,
+				8BABA8232EF5052F0069A044 /* WoltVenueRowView.swift in Sources */,
+				8BABA8252EF5052F0069A044 /* ApiError.swift in Sources */,
+				8BABA8262EF5052F0069A044 /* WoltResults.swift in Sources */,
+				8BABA8272EF5052F0069A044 /* RestaurantRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8BABA82B2EF5073C0069A044 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BABA8382EF507540069A044 /* LunchMachineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8BABA8342EF5073C0069A044 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8BABA7DE2EF502430069A044 /* Lunch-Machine */;
+			targetProxy = 8BABA8332EF5073C0069A044 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8BABA7E82EF502450069A044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunch-machine/Info.plist\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8BABA7E92EF502450069A044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunch-machine/Info.plist\n";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8BABA7EB2EF502450069A044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunch-machine/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to find nearby restaurants";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BillyNguyen.Lunch-Machine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8BABA7EC2EF502450069A044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "lunch-machine/Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We use your location to find nearby restaurants";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BillyNguyen.Lunch-Machine";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8BABA8362EF5073C0069A044 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BillyNguyen.Lunch-MachineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lunch-Machine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lunch-Machine";
+			};
+			name = Debug;
+		};
+		8BABA8372EF5073C0069A044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BillyNguyen.Lunch-MachineTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lunch-Machine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Lunch-Machine";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BABA7DA2EF502430069A044 /* Build configuration list for PBXProject "Lunch-Machine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BABA7E82EF502450069A044 /* Debug */,
+				8BABA7E92EF502450069A044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BABA7EA2EF502450069A044 /* Build configuration list for PBXNativeTarget "Lunch-Machine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BABA7EB2EF502450069A044 /* Debug */,
+				8BABA7EC2EF502450069A044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BABA8352EF5073C0069A044 /* Build configuration list for PBXNativeTarget "Lunch-MachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BABA8362EF5073C0069A044 /* Debug */,
+				8BABA8372EF5073C0069A044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BABA7D72EF502430069A044 /* Project object */;
+}

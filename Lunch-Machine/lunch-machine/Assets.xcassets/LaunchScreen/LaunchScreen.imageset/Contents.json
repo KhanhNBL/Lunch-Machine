@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "lunch-foods-app-launch-screen-upscaled.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "lunch-foods-app-launch-screen-upscaled@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "lunch-foods-app-launch-screen-upscaled@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
