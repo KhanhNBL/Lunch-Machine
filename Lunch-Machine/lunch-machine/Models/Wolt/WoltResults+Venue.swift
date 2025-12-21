@@ -1,7 +1,5 @@
 import Foundation
 
-import Foundation
-
 extension WoltResults {
     var venues: [Venue] {
         let all = (sections ?? [])
