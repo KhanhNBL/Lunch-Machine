@@ -18,5 +18,4 @@ extension Logger {
 
     /// All others logs
     static let others = Logger(subsystem: subsystem, category: "others")
-
 }

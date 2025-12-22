@@ -1,6 +1,6 @@
+import Combine
 import CoreLocation
 import MapKit
-import Combine
 
 class GeocodeManager: ObservableObject {
     private let geocoder = CLGeocoder()
@@ -11,7 +11,6 @@ class GeocodeManager: ObservableObject {
         } catch {
             return []
         }
-
     }
 
     func reverseGeocoding(location: CLLocation) async -> [CLPlacemark] {
@@ -22,15 +21,13 @@ class GeocodeManager: ObservableObject {
         }
     }
 
-    func searchBy(string: String, region: MKCoordinateRegion) {
-
-    }
+    func searchBy(string _: String, region _: MKCoordinateRegion) {}
 }
 
 extension Array where Element == CLPlacemark {
     func convert() -> [Landmark] {
-        return self.map { placemark in
-            return Landmark(
+        return map { placemark in
+            Landmark(
                 id: UUID(),
                 name: placemark.name,
                 thoroughfare: placemark.thoroughfare

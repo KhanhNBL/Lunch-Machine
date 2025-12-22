@@ -2,7 +2,11 @@ import Foundation
 
 enum WoltEndpointProvider: EndpointProvider {
     case getRestaurants(latitude: Double, longitude: Double)
-
+    
+    var baseURL: String {
+        return "restaurant-api.wolt.com/v1"
+    }
+    
     var path: String {
         return "/pages/restaurants"
     }

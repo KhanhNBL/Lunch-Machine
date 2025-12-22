@@ -13,6 +13,7 @@ struct RestaurantRowView: View {
         }.padding()
     }
 }
+
 #Preview {
     RestaurantRowView(
         placemark: Landmark(

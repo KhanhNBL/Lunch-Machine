@@ -24,10 +24,6 @@ extension EndpointProvider {
         return "https"
     }
 
-    var baseURL: String {
-        return "restaurant-api.wolt.com/v1"
-    }
-
     var token: String {
         return ""
     }

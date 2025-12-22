@@ -1,6 +1,7 @@
 import Foundation
 
 // MARK: - WoltResults
+
 struct WoltResults: Codable, Hashable {
     let created: DateTimestamp?
     let expiresInSeconds: Int?
@@ -14,16 +15,19 @@ struct WoltResults: Codable, Hashable {
     let trackID: String?
 
     // MARK: - DateTimestamp
+
     struct DateTimestamp: Codable, Hashable {
         let date: Int?
     }
 
     // MARK: - WoltResultsFiltering
+
     struct WoltResultsFiltering: Codable, Hashable {
         let filters: [SortableElement]
     }
 
     // MARK: - SortableElement
+
     struct SortableElement: Codable, Hashable {
         let id: String
         let name: String
@@ -32,12 +36,14 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - Cuisine
+
     struct Cuisine: Codable, Hashable {
         let id: String?
         let name: String?
     }
 
     // MARK: - Section
+
     struct Section: Codable, Hashable {
         let contentID: String?
         let endOfSection: EndOfSection?
@@ -50,12 +56,14 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - EndOfSection
+
     struct EndOfSection: Codable, Hashable {
         let link: EndOfSectionLink?
         let type: String?
     }
 
     // MARK: - EndOfSectionLink
+
     struct EndOfSectionLink: Codable, Hashable {
         let target: String?
         let targetSort: TargetSort?
@@ -69,6 +77,7 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - Item
+
     struct Item: Codable, Hashable {
         let contentID: String?
         let description: String?
@@ -86,11 +95,13 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - ItemFiltering
+
     struct ItemFiltering: Codable, Hashable {
         let filters: [PurpleFilter]?
     }
 
     // MARK: - PurpleFilter
+
     struct PurpleFilter: Codable, Hashable {
         let id: PurpleID?
         let values: [String]
@@ -98,17 +109,19 @@ struct WoltResults: Codable, Hashable {
 
     enum PurpleID: String, Codable, Hashable {
         case priceRange = "price-range"
-        case primary = "primary"
+        case primary
         case woltPlus = "wolt-plus"
     }
 
     // MARK: - Image
+
     struct Image: Codable, Hashable {
         let blurhash: String
         let url: String
     }
 
     // MARK: - ItemLink
+
     struct ItemLink: Codable, Hashable {
         let target: String?
         let targetSort: TargetSort?
@@ -120,6 +133,7 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - ItemSorting
+
     struct ItemSorting: Codable, Hashable {
         let sortables: [Sortable]
 
@@ -135,6 +149,7 @@ struct WoltResults: Codable, Hashable {
     // synthesized for types that have collections (such as arrays or dictionaries).
 
     // MARK: - Sortable
+
     struct Sortable: Codable, Hashable {
         let id: SortableID?
         let value: Int?
@@ -148,15 +163,15 @@ struct WoltResults: Codable, Hashable {
     enum SortableID: String, Codable, Hashable {
         case deliveryEstimate = "delivery-estimate"
         case deliveryPrice = "delivery-price"
-        case distance = "distance"
+        case distance
         case preparationEstimate = "preparation-estimate"
-        case rating = "rating"
+        case rating
     }
 
     enum TelemetryVenueBadge: String, Codable, Hashable {
         case manuallyCurated = "manually_curated"
-        case new = "new"
-        case promotions = "promotions"
+        case new
+        case promotions
     }
 
     enum ItemTemplate: String, Codable, Hashable {
@@ -165,6 +180,7 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - Venue
+
     struct Venue: Codable, Hashable {
         let address: String?
         let badges: [Badge]
@@ -194,12 +210,14 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - Badge
+
     struct Badge: Codable, Hashable {
         let text: String?
         let variant: String?
     }
 
     // MARK: - EstimateBox
+
     struct EstimateBox: Codable, Hashable {
         let subtitle: String?
         let template: String?
@@ -207,12 +225,14 @@ struct WoltResults: Codable, Hashable {
     }
 
     // MARK: - Rating
+
     struct Rating: Codable, Hashable {
         let rating: Int?
         let score: Double?
     }
 
     // MARK: - WoltResultsSorting
+
     struct WoltResultsSorting: Codable, Hashable {
         let sortables: [Sortable]?
     }

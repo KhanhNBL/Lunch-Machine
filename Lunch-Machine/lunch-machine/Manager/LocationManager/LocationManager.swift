@@ -1,6 +1,6 @@
+import Combine
 import CoreLocation
 import OSLog
-import Combine
 
 final class LocationManager: NSObject, ObservableObject {
     let manager = CLLocationManager()
@@ -32,16 +32,15 @@ final class LocationManager: NSObject, ObservableObject {
 }
 
 extension LocationManager: CLLocationManagerDelegate {
-
     func locationManager(
-        _ manager: CLLocationManager,
+        _: CLLocationManager,
         didUpdateLocations locations: [CLLocation]
     ) {
         location = locations.first
     }
 
     func locationManager(
-        _ manager: CLLocationManager,
+        _: CLLocationManager,
         didFailWithError error: Error
     ) {
         print("Location error \(error)")

@@ -37,6 +37,7 @@ struct RestaurantsListView: View {
 }
 
 // MARK: - Subviews
+
 extension RestaurantsListView {
     @ViewBuilder
     private var content: some View {
@@ -109,6 +110,7 @@ extension RestaurantsListView {
 }
 
 // MARK: - Actions
+
 extension RestaurantsListView {
     private func findLunchNearMe() {
         woltResults = nil

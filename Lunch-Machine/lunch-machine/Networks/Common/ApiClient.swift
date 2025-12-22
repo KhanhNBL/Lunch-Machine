@@ -23,7 +23,7 @@ final class ApiClient: ApiProtocol {
     ) async throws -> T {
         do {
             let (data, response) = try await session.data(for: endpoint.asURLRequest())
-            return try self.manageResponse(data: data, response: response)
+            return try manageResponse(data: data, response: response)
         } catch let error as ApiError {
             throw error
         } catch {
@@ -42,34 +42,33 @@ final class ApiClient: ApiProtocol {
             )
         }
         switch response.statusCode {
-            case 200...299:
-                do {
-                    return try JSONDecoder().decode(T.self, from: data)
-                } catch {
-                    Logger.network.error("‼️ \(error.localizedDescription)")
-                    throw ApiError(
-                        errorCode: "error-decoding-data",
-                        message: "Error decoding data"
-                    )
-                }
-            default:
-                guard let decodedError = try? JSONDecoder().decode(ApiError.self, from: data) else {
-                    Logger.network.error("‼️ Unknown backend error")
-                    throw ApiError(
-                        statusCode: response.statusCode,
-                        errorCode: "ERROR-0",
-                        message: "Unknown backend error"
-                    )
-                }
-                Logger.network.error(
-                    "‼️ Backend error - \(response.statusCode): \(decodedError.message)"
+        case 200 ... 299:
+            do {
+                return try JSONDecoder().decode(T.self, from: data)
+            } catch {
+                Logger.network.error("‼️ \(error.localizedDescription)")
+                throw ApiError(
+                    errorCode: "error-decoding-data",
+                    message: "Error decoding data"
                 )
+            }
+        default:
+            guard let decodedError = try? JSONDecoder().decode(ApiError.self, from: data) else {
+                Logger.network.error("‼️ Unknown backend error")
                 throw ApiError(
                     statusCode: response.statusCode,
-                    errorCode: decodedError.errorCode,
-                    message: decodedError.message
+                    errorCode: "ERROR-0",
+                    message: "Unknown backend error"
                 )
+            }
+            Logger.network.error(
+                "‼️ Backend error - \(response.statusCode): \(decodedError.message)"
+            )
+            throw ApiError(
+                statusCode: response.statusCode,
+                errorCode: decodedError.errorCode,
+                message: decodedError.message
+            )
         }
     }
 }
-

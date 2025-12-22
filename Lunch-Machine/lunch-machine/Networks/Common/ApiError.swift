@@ -22,7 +22,6 @@ struct ApiError: Error {
 }
 
 extension ApiError: Decodable {
-
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         errorCode = try container.decode(String.self, forKey: .errorCode)

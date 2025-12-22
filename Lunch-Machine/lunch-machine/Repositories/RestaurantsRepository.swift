@@ -1,6 +1,6 @@
-import Foundation
 import Combine
 import CoreLocation
+import Foundation
 
 class RestaurantsRepository: ObservableObject {
     let apiClient: ApiProtocol
@@ -32,4 +32,3 @@ class RestaurantsRepository: ObservableObject {
         return results
     }
 }
-
