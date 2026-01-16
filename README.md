@@ -2,7 +2,7 @@
 
 Lunch Machine is a simple iOS application built with **SwiftUI** that helps users discover nearby restaurants based on their current location.
 
-This project is designed as a **portfolio project for a Junior iOS Developer**, focusing on clean architecture, state handling, and real-world app flows such as permissions, loading, and empty states.
+This project was built to practice real-world iOS development concepts such as location permissions, asynchronous networking, clean architecture, and user experience state handling.
 
 ---
 
@@ -16,14 +16,32 @@ This project is designed as a **portfolio project for a Junior iOS Developer**, 
 - Custom Launch Screen & App Icon
 
 ---
+## 🧠 Architecture Overview
+
+The app follows a lightweight, maintainable architecture with clear separation of responsibilities:
+
+- **Views**  
+  SwiftUI views responsible only for UI rendering and reacting to state changes.
+
+- **Repository**  
+  `RestaurantsRepository` handles data fetching, location access, and communicates with the API layer.
+
+- **Services**  
+  Networking and location logic are abstracted behind protocols to improve testability.
+
+- **Models**  
+  Separate API models (`WoltResults`) and domain models (`Restaurant`) to avoid tightly coupling the UI to backend responses.
+
+This structure keeps the codebase testable, easy to reason about, and ready for future refactoring.
 
 ## 🛠 Tech Stack
 
-- **SwiftUI**
-- **Async/Await**
-- **CoreLocation**
-- **MV-style separation (Views / Models / Services)**
-- **SwiftLint** (code style & consistency)
+- **Language:** Swift  
+- **UI:** SwiftUI  
+- **Concurrency:** async / await  
+- **iOS APIs:** CoreLocation  
+- **Architecture:** Repository-based separation (MV-style)  
+- **Tools:** Xcode, Git, SwiftLint  
 
 ## ▶️ How to Run
 
@@ -32,12 +50,14 @@ This project is designed as a **portfolio project for a Junior iOS Developer**, 
 git clone https://github.com/KhanhNBL/Lunch-Machine.git
 cd Lunch-Machine
 ```
-## 📸 Screenshots
+## 📸 Screenshots/Demo 
 
 <p float="left">
   <img src="Screenshots/empty-state.png" width="260" />
   <img src="Screenshots/list.png" width="260" />
 </p>
+
+https://github.com/KhanhNBL/Lunch-Machine/blob/main/AppLaunching.mov
 
 ## 📍 Simulator Location (Important)
 
@@ -70,7 +90,15 @@ Longitude: 24.9384
 
 -No offline caching
 
+## 🔮 Future Improvements
+
+- Add more ViewModel-level unit tests
+- Improve error handling with retry actions
+- Introduce caching for offline usage
+- Refine architecture towards a more explicit MVVM or unidirectional data flow
+
 ## 👤 Author
 
 Khanh Nguyen
-GitHub: https://github.com/KhanhNBL
+- GitHub: https://github.com/KhanhNBL
+- LinkedIn: https://www.linkedin.com/in/khanh-nguyen-ba-long-b881341aa/
